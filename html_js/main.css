@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#info{
+    display: none;
+}
+
+#info.success{
+    display: block;
+    background: green;
+    padding: 8px;
+    color: #FFF;
+}
+
+#info.error{
+    display: block;
+    background: red;
+    padding: 8px;
+    color: #FFF;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+form input{
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+form button{
+    padding: 8px;
+    border-radius: 12px;
+}
+
+form button.enviar{
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+}
