@@ -1,29 +1,89 @@
-.carousel-item.active{
+body{
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #121212;
+}
+
+#cabecalho .nav .nav-link.active {
+    color: #f61818;
+    background-color: transparent;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: "Anton", sans-serif;
+}
+
+#sobre-a-academia,
+#aula {
+    background-color: #121212;
+}
+
+#sobre-a-academia .carousel-item {
+    max-height: 640px;
     position: relative;
 }
 
-.carousel-item img {
-    max-height: 70vh;
-}
-
-.overlay{
+#sobre-a-academia .carousel-item .overlay{
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.overlay h2 {
-    color: #FFF;
-}
-
-.card img.card-img-top {
-    height: 400px;
+#sobre-a-academia .carousel-item img {
     object-fit: cover;
-    object-position: top;
+    object-position: center center;
+    width: 100%;
+}
+
+.text-colored {
+    color: #FF0000;   
+}
+
+.nav-academia .nav-link.active, #fale-conosco button {
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.nav-academia .nav-link:hover{
+    color: #FF0000;
+}
+
+.img-container {
+    height: 250px;
+}
+
+.img-container img {
+    height: 100%;
+    width: auto;
+}
+
+.social-links li {
+    list-style-type: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-item img {
+        height: 280px
+    }
 }

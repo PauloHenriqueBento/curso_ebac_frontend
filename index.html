@@ -3,104 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modulo 13 - Exercicio</title>
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="py-3 border-bottom">
+<body data-bs-theme="dark">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1>Exercicio 13</h1>
+            <h1 class="navbar-brand m-0 section-title">Lorem <span class="text-colored">Gym</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-lg-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-academia" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a academia
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#planos" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Planos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#aula" class="nav-link">
+                            <i class="bi bi-heart-pulse-fill me-1"></i>
+                            Aulas
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <div id="carousel-header" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./src/carousel1.jpg" class="w-100">
-                    <div class="overlay">
-                        <h2 class="text-center">Gym 1</h2>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-academia">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100" data-bs-interval="3000">
+                        <img src="./images/slides/carousel1.jpg" alt="Foto do espaço interno do restaurante">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="carousel-item w-100" data-bs-interval="3000">
+                        <img src="./images/slides/carousel2.jpg" alt="Duas teaças de vinho">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="carousel-item w-100" data-bs-interval="3000">
+                        <img src="./images/slides/carousel3.jpg" alt="Uma mesa com comida">
+                        <div class="overlay"></div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/carousel2.jpg" class="w-100">
-                    <div class="overlay">
-                        <h2 class="text-center">Gym 2</h2>
-                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
-                <div class="carousel-item">
-                    <img src="./src/carousel3.jpg" class="w-100">
-                    <div class="overlay">
-                        <h2 class="text-center">Gym 3</h2>
-                    </div>
-                </div>
-                
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-header" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carousel-header" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-        </div>
-        <section class="container my-5">
-            <h2 class="mb-3">Exercicios</h2>
-            <div class="row gy-4">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <img src="./src/card1.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Pulley Frente</h5>
-                            <p class="card-text">O exercício Pulley Frente, também conhecido como puxada alta, trabalha principalmente os músculos das costas, incluindo o latíssimo do dorso. Ao puxar a barra na direção do peito, você melhora a força e a definição das costas e dos braços.</p>
-                            <a href="#" class="btn btn-primary">Treinar</a>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/academia.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                     <div class="card h-100">
-                        <img src="./src/card2.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Supino reto</h5>
-                            <p class="card-text">O Supino Reto é um exercício fundamental para o desenvolvimento do peitoral. Realizado deitado em um banco e empurrando uma barra para cima, ele também fortalece os músculos dos ombros e dos tríceps, sendo essencial para o treino de força e hipertrofia.</p>
-                            <a href="#" class="btn btn-primary">Treinar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                     <div class="card h-100">
-                        <img src="./src/card3.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Desenvolvimento</h5>
-                            <p class="card-text">O Desenvolvimento, ou Press Militar, é um exercício que foca nos músculos dos ombros. Ao levantar uma barra ou halteres acima da cabeça, você fortalece os deltoides, trapézio e tríceps, promovendo força e estabilidade na região dos ombros.</p>
-                            <a href="#" class="btn btn-primary">Treinar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                     <div class="card h-100">
-                        <img src="./src/card4.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Agachamento livre</h5>
-                            <p class="card-text">O Agachamento Livre é um dos exercícios mais completos para o corpo. Trabalha intensamente os músculos das pernas, glúteos e core. Ao agachar com uma barra nas costas, você melhora a força, a resistência e a coordenação, além de promover um alto gasto calórico.</p>
-                            <a href="#" class="btn btn-primary">Treinar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                     <div class="card h-100">
-                        <img src="./src/card5.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Leg press 45</h5>
-                            <p class="card-text">O Leg Press 45 é um exercício realizado em uma máquina específica, onde você empurra uma plataforma inclinada com os pés. Esse movimento trabalha principalmente os quadríceps, glúteos e panturrilhas, sendo excelente para aumentar a força e a massa muscular das pernas com segurança e controle.</p>
-                            <a href="#" class="btn btn-primary">Treinar</a>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a academia</span></h2>
+                            <p>
+                                Nossa academia é dedicada a proporcionar um ambiente acolhedor e motivador para todos os nossos membros. Focamos em oferecer serviços de alta qualidade, com equipamentos de ponta e uma equipe de profissionais qualificados para ajudar você a alcançar seus objetivos de saúde e fitness. Estamos comprometidos com seu bem-estar e buscamos sempre melhorar sua experiência conosco.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Nossa academia conta com um espaço amplo e moderno, projetado para oferecer conforto e funcionalidade. Equipamos nossas instalações com aparelhos de última geração, áreas específicas para treinamento funcional, musculação e cardio. Além disso, temos salas exclusivas para aulas de grupo, como yoga, pilates e spinning. Cada detalhe foi pensado para proporcionar uma experiência completa e agradável.
+                            </p>
+                            <ul>
+                                <li><span class="text-colored fw-bold">Treinamento Personalizado:</span> Planos de treino sob medida para atender suas necessidades individuais</li>
+                                <li><span class="text-colored fw-bold">Aulas de Grupo:</span> Diversas modalidades de aulas coletivas para todos os níveis.</li>
+                                <li><span class="text-colored fw-bold">Avaliação Física:</span> Avaliações periódicas para acompanhar seu progresso e ajustar seu plano de treino conforme necessário.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+
+
+        <section id="planos">
+            <div class="container py-5">
+                <div class="row">
+                    <h2 class="section-title text-center">Conheça nossos <span class="text-colored">Planos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="img-container mb-3">
+                            <img src="./images/planos/basico.jpg" alt="Plano Básico" class="w-100 rounded mb-2">
+                        </div>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-clipboard2-heart-fill"></i>
+                            Básico
+                        </h3>
+                        <p>Ideal para iniciantes, este plano oferece acesso completo às áreas de musculação e cardio, com orientação inicial para montar seu treino. Aproveite um ambiente acolhedor e equipamentos de qualidade para começar sua jornada fitness.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-container mb-3">
+                            <img src="./images/planos/intermediario.jpg" alt="Plano Intermediário" class="w-100 rounded mb-2">
+                        </div>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-award-fill"></i>
+                            Intermediário
+                        </h3>
+                        <p>Para quem já possui alguma experiência, o plano intermediário inclui, além do acesso às áreas de musculação e cardio, aulas de grupo como spinning, pilates e yoga. Alcance novos patamares com o suporte de nossos treinadores qualificados.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-container mb-3">
+                            <img src="./images/planos/avancado.jpg" alt="Plano Avançado" class="w-100 rounded mb-2">
+                        </div>
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-trophy-fill"></i>
+                            Avançado
+                        </h3>
+                        <p>Destinado a atletas e entusiastas dedicados, o plano avançado oferece todos os benefícios dos planos anteriores, com adicional de treinamento personalizado e acesso a áreas exclusivas para treinos específicos. Maximize seu potencial com acompanhamento contínuo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="aula">
+            <div class="container py-5">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nossas <span class="text-colored">aulas</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-academia">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#luta" class="fw-bold text-start nav-link text-colored active">Luta</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#danca" class="fw-bold text-start nav-link text-colored">Dança</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#musculacao" class="fw-bold text-start nav-link text-colored">Musculação</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#crossfit" class="fw-bold text-start nav-link text-colored">Crossfit</button>
+                        </nav>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="luta">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/luta/boxe.jpg" alt="Boxe" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Boxe</h5>
+                                        <p>Aprenda técnicas de boxe para melhorar sua coordenação e resistência física.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/luta/muay-thai.jpg" alt="Muay Thai" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Muay Thai</h5>
+                                        <p>Desenvolva força e agilidade com as aulas intensas de Muay Thai.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/luta/judo.jpg" alt="Judô" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Judô</h5>
+                                        <p>Pratique técnicas de arremesso e imobilização no Judô.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/luta/jiu-jitsu.jpg" alt="Jiu-Jitsu" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Jiu-Jitsu</h5>
+                                        <p>Melhore sua autodefesa e condicionamento físico com Jiu-Jitsu.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab-pane" id="danca">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/danca/zumba.jpg" alt="Zumba" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Zumba</h5>
+                                        <p>Divirta-se e queime calorias com as animadas aulas de Zumba.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/danca/ballet-fitness.jpg" alt="Ballet Fitness" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Ballet Fitness</h5>
+                                        <p>Combine técnicas de ballet com exercícios de fitness para um treino completo.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/danca/hip-hop.jpg" alt="Hip Hop" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Hip Hop</h5>
+                                        <p>Aprenda coreografias modernas e melhore sua expressão corporal com Hip Hop.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab-pane" id="musculacao">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/musculacao/treino-funcional.jpg" alt="Treino Funcional" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Treino Funcional</h5>
+                                        <p>Fortaleça seus músculos e melhore sua flexibilidade com exercícios funcionais.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/musculacao/treino-hipertrofia.jpg" alt="Treino de Hipertrofia" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Treino de Hipertrofia</h5>
+                                        <p>Aumente sua massa muscular com treinos específicos para hipertrofia.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/musculacao/treino-resistencia.jpg" alt="Treino de Resistência" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Treino de Resistência</h5>
+                                        <p>Melhore seu condicionamento físico e resistência muscular.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="tab-pane" id="crossfit">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/crossfit/crossfit.jpg" alt="Crossfit" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">Crossfit</h5>
+                                        <p>Desafie seus limites com treinos intensos de Crossfit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="img-container">
+                                            <img src="./images/aulas/crossfit/hiit.jpg" alt="HIIT" class="w-100 rounded">
+                                        </div>
+                                        <h5 class="text-colored fw-bold mt-2">HIIT</h5>
+                                        <p>Queime gordura e melhore seu condicionamento com treinos de alta intensidade intervalados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco">
+            <div class="container py-5">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 mx-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua da academia, 10, Pq. Fitness - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
