@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: variaveis.$primaryColor;
+    color: variaveis.$textColor;
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+
+        h1{
+            margin-top: 36px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            column-gap: 2%;
+            row-gap: 4%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

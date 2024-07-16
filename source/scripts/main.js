@@ -1,0 +1,9 @@
+console.log('Hello World');
+
+console.log('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum ante mauris, a sagittis felis iaculis ut. Donec ligula odio, bibendum sit amet dui non, venenatis eleifend tortor. Fusce fringilla, purus ut malesuada interdum, dui felis blandit ligula, ac placerat risus diam quis neque. Ut consectetur neque ac tincidunt luctus. Vivamus quam lectus, tempor eget consectetur interdum, luctus vel lorem. Phasellus placerat urna vel ornare sagittis. Vivamus ex nibh, venenatis nec sem scelerisque, efficitur elementum leo. Curabitur in felis sollicitudin, rutrum nulla ut, sodales orci. Pellentesque ullamcorper, orci et pellentesque pretium, ex ex elementum orci, a gravida nisl risus id mi. Morbi accumsan ultricies odio eu ultricies. Aliquam sed dapibus mauris, non blandit enim. Etiam hendrerit vitae dui id iaculis. Vivamus magna neque, imperdiet sed aliquam eget, maximus eu turpis. In facilisis, enim nec egestas iaculis, quam turpis facilisis nunc, vitae sagittis nunc odio ut purus. Ut ullamcorper tincidunt elit vitae tristique. Etiam quis ligula mattis dolor placerat ornare.')
+
+
+const a = 10;
+const b = 25;
+
+console.log(a + b);
