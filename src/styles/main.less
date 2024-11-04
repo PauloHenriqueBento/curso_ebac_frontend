@@ -1,0 +1,35 @@
+@import 'variables.less';
+@import 'header.less';
+@import 'menu.less';
+@import 'products.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-family;
+}
+
+body {
+    background-color: @background-color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: @container-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
+@media screen and (max-width: @media-max-width-1) {
+    .container {
+        max-width: 80%;
+    }
+}
